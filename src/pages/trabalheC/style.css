@@ -57,3 +57,26 @@
 .trabalhe-conosco .t-conosco-content a:hover {
   background-color: var(--vermelhoescuro);
 }
+
+/* ============================= MEDIA 700px ============================== */
+
+
+@media (max-width: 714px) {
+
+  .trabalhe-conosco {
+    padding: 0 10 !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .trabalhe-conosco .t-conosco-content {
+    width: 100%;
+  }
+
+  .trabalhe-conosco .t-conosco-content p {
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+  }
+}

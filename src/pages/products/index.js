@@ -4,7 +4,7 @@ import catalogoRed from "../../assets/img/catalogoRed.jpg";
 
 function Products() {
   return (
-    <section className="products">
+    <section className="products" id="catalogo">
       <div class="content-products">
         <h2 class="reveal">Catálogo</h2>
         <p class="reveal">

@@ -76,3 +76,48 @@
     transform: translateY(-2px);
     box-shadow: 0px 2px 15px -7px var(--branco);
   }
+
+
+  /* ========================== MEDIA ============================= */
+
+
+  @media (max-width: 714px) {
+    .products {
+        height: 100%;
+      }
+    
+      .products .content-products {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .products .content-products p {
+        width: 90%;
+        font-size: 16px;
+      }
+    
+      .products .content-products .card1,
+      .card2 {
+        width: 70%;
+      }
+    
+      .content .card {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vh;
+      }
+    
+      .cards {
+        display: flex;
+        flex-direction: column;
+      }
+      .card a {
+        margin-bottom: 30px;
+      }
+  }

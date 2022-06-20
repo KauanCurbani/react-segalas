@@ -1,70 +1,127 @@
-
-
 :root {
-    --vermelho: #e00208;
-    --vermelhoclaro: #ff4b4b;
-    --vermelhoescuro: #a50e18;
-    --preto: #000;
-    --branco: #fff;
-  
-    /* #c31c39  */
-  }
+  --vermelho: #e00208;
+  --vermelhoclaro: #ff4b4b;
+  --vermelhoescuro: #a50e18;
+  --preto: #000;
+  --branco: #fff;
+
+  /* #c31c39  */
+}
 
 .home {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.831), transparent),
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.346), transparent),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.831), transparent),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.346), transparent),
+    url("../../assets/img/banner.gif");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.home .text-home {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  font-size: 20px;
+  color: #fff;
+  animation: reveal 1s ease forwards;
+}
+
+.home .text-home img {
+  width: 23%;
+  margin-bottom: 10px;
+}
+.home .text-home p {
+  width: 40%;
+  font-weight: 200;
+  font-size: 19px;
+}
+.home .text-home .homeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 130px;
+  width: 13%;
+  height: 55px;
+  border-radius: 10px;
+  background-color: var(--vermelho);
+
+  text-decoration: none;
+  color: var(--branco);
+  font-size: 19px;
+  font-weight: 200;
+
+  margin-top: 30px;
+  transition: 0.2s ease;
+}
+.home .text-home .homeButton:hover {
+  background-color: var(--vermelhoescuro);
+  transform: translateY(-3px);
+}
+
+/* ======================== MEDIA ================================== */
+
+/* =============================== 1800px =============================== */
+@media (min-width: 1800px) {
+  .home .text-home {
+    font-size: 20px;
+  }
+  .home .text-home span {
+    font-size: 32px;
+  }
+}
+
+/* ================================== 714px =================================== */
+
+@media (max-width: 714px)
+ {
+  .home {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, transparent),
       url("../../assets/img/banner.gif");
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
   }
-  .home .text-home {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    font-size: 20px;
-    color: #fff;
-    animation: reveal 1s ease forwards;
-  }
-  
-  .home .text-home img {
-    width: 23%;
-    margin-bottom: 10px;
-  }
+
   .home .text-home p {
-    width: 40%;
-    font-weight: 200;
-    font-size: 19px;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
-  .home .text-home .homeButton {
+
+  .home .text-home {
+    width: 100%;
+    align-items: center;
+  }
+
+  .home .text-home .imgHome {
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    min-width: 130px;
-    width: 13%;
-    height: 55px;
-    border-radius: 10px;
-    background-color: var(--vermelho);
-  
-    text-decoration: none;
-    color: var(--branco);
-    font-size: 19px;
-    font-weight: 200;
-  
-    margin-top: 30px;
-    transition: 0.2s ease;
+    width: 50%;
   }
-  .home .text-home .homeButton:hover {
-    background-color: var(--vermelhoescuro);
-    transform: translateY(-3px);
+
+  .home .text-home .homeButton {
+    width: 60%;
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
   }
+  .homeButton {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+  }
+}

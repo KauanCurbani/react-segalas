@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "./style.css"
 
+
 function Atuacao() {
   return (
-    <section className="atuacao">
+    <section className="atuacao" id="atuacao">
       <div className="left">
         <div class="left-content">
             <h1>Onde Atuamos</h1>

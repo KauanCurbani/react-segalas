@@ -2,6 +2,12 @@ import "./style.css";
 import { RiMenu3Fill } from "react-icons/ri";
 
 function Header() {
+
+  window.addEventListener("scroll", function () {
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 600);
+  });
+
   return (
     <header className="header">
       <img src="https://i.postimg.cc/qBy8McD4/S-Vermelho.png" />
@@ -17,7 +23,7 @@ function Header() {
             <a href="#catalogo">Catálogo</a>
           </li>
           <li>
-            <a href="#areas">Onde Atuamos?</a>
+            <a href="#atuacao">Onde Atuamos?</a>
           </li>
           <li>
             <a href="#trabalhe-c">Trabalhe conosco</a>

@@ -3,7 +3,7 @@ import segalasImg from "../../assets/img/SegalasVermSemS.png";
 
 function About() {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div class="about-content">
         <h2 class="reveal">Sobre a Segala's</h2>
         <p class="reveal">

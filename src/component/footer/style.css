@@ -110,3 +110,54 @@ hr {
 .copyright .copy {
   text-align: center;
 }
+
+/* =============================== 1000px =============================== */
+
+@media (max-width: 1000px) {
+  footer {
+    flex-direction: column;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-left,
+  .footer-right {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ================================= 700px ============================ */
+  footer .footer-left .img-logoFooter {
+    display: none;
+  }
+
+  .footer-left .information-local {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  hr {
+    display: none;
+  }
+  .footer-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social_icon {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .copy {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+}
