@@ -7,7 +7,7 @@ import sBranco from "../../assets/img/sBranco.png";
 function Footer() {
   return (
     <footer>
-      <div class="waves">
+      <div className="waves">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#f3f3f3"
@@ -16,11 +16,11 @@ function Footer() {
           ></path>
         </svg>
       </div>
-      <div class="footer-content">
-        <div class="footer-left">
-          <img class="img-logoFooter" src={sBranco} alt="s-branco" />
+      <div className="footer-content">
+        <div className="footer-left">
+          <img className="img-logoFooter" src={sBranco} alt="s-branco" />
           <hr />
-          <div class="information-local">
+          <div className="information-local">
             <a
               href="https://www.google.com/maps/place/Segala's+Alimentos+-+Confian%C3%A7a+que+se+entrega!/@-26.8644559,-49.041953,16z/data=!4m5!3m4!1s0x94df21db3d240fcf:0xfd01cd9a5f79507e!8m2!3d-26.8651936!4d-49.0312153"
               target="_blank"
@@ -32,8 +32,8 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div class="footer-right">
-          <div class="socials">
+        <div className="footer-right">
+          <div className="socials">
             <a
               href="https://pt-br.facebook.com/segalasalimentos/"
               target="_blank"
@@ -55,9 +55,9 @@ function Footer() {
           </div>
         </div>
       </div>
-      <footer class="copyright">
-        <p class="copy">
-        ©2022 Segala's Alimentos | Todos os direitos reservados
+      <footer className="copyright">
+        <p className="copy">
+          ©2022 Segala's Alimentos | Todos os direitos reservados
         </p>
       </footer>
     </footer>

@@ -1,12 +1,13 @@
 import "./style.css";
 import segalasImg from "../../assets/img/SegalasVermSemS.png";
 
+
 function About() {
   return (
     <section className="about" id="about">
-      <div class="about-content">
-        <h2 class="reveal">Sobre a Segala's</h2>
-        <p class="reveal">
+      <div className="about-content">
+        <h2 className="reveal">Sobre a Segala's</h2>
+        <p className="reveal">
           Estamos desde 1996 atuando com ética e transparência para oferecer
           excelência em cada um dos processos que envolvem nosso negócio.
           Trabalhar com honestidade, gratidão, valorização e pontualidade é o
@@ -22,7 +23,7 @@ function About() {
           mostrou que juntos seremos sempre mais fortes.
         </p>
         <img
-          class="reveal"
+          className="reveal"
           src="https://i.postimg.cc/Bb0rprQk/Confian-a-que-se-entrega-vermelho-png.png"
           alt="Confiança que se entrega"
         />

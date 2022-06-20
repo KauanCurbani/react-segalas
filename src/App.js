@@ -6,6 +6,7 @@ import Atuacao from "./pages/atuacao";
 import Map from "./pages/map";
 import TrabalheC from "./pages/trabalheC";
 import Footer from "./component/footer";
+import ToTop from "./component/toTop";
 
 import "./App.css";
 
@@ -19,6 +20,7 @@ function App() {
       <Atuacao />
       <TrabalheC />
       <Footer />
+      <ToTop />
     </div>
   );
 }

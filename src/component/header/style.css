@@ -106,4 +106,69 @@ header ul li a:hover:after {
       background: #fff;
       border-bottom: 1px solid var(--vermelho);
     }
+    .toggle{
+      display: flex;
+    }
+    nav{
+      position: fixed;
+      top: 60px;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.9);
+      transform: translateX(120%) skewX(10deg);
+      transition: .5s ease;
+   }
+   .toggle.active ~ nav{
+    transform: translateX(0) skewX(0deg);
+   }
+   nav ul{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+   }
+   nav ul li {
+    margin: 20px 0;
+   }
+   nav ul li a{
+    color: var(--branco) !important;
+   }
 }
+
+/*   nav {
+    z-index: 10000;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.86);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(150%) skewX(15deg);
+    transition: 0.5s ease-in-out;
+  }
+
+  .active ~ nav {
+    transform: translateX(0%) skew(0deg) !important;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    margin: 15px 0;
+  }
+  nav ul li a {
+    color: #fff !important;
+  }
+ */

@@ -1,0 +1,38 @@
+:root {
+  --vermelho: #e00208;
+  --vermelhoclaro: #ff4b4b;
+  --vermelhoescuro: #a50e18;
+  --preto: #000;
+  --branco: #fff;
+
+  /* #c31c39  */
+}
+
+.toTop {
+  z-index: 999;
+
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+
+  width: 40px;
+  height: 40px;
+  background-color: var(--vermelho);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+.toTop:hover {
+  background-color: var(--vermelhoclaro);
+  box-shadow: 0 0 10px var(--vermelhoclaro);
+  transform: scale(1.1);
+}
+.toTop .icon {
+  font-size: 25px;
+  color: #fff;
+}

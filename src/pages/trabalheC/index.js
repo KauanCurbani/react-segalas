@@ -2,10 +2,10 @@ import "./style.css";
 
 function TrabalheC() {
   return (
-    <section class="trabalhe-conosco" id="trabalhe-c">
-    <div class="t-conosco-content reveal">
-      <h2 class="">Trabalhe conosco</h2>
-      <p class="">
+    <section className="trabalhe-conosco" id="trabalhe-c">
+    <div className="t-conosco-content reveal">
+      <h2 className="">Trabalhe conosco</h2>
+      <p className="">
         Gostaria de fazer parte da nossa equipe? Envie seu currículo através do
         nosso formulário de contato para que nosso RH receba suas informações e
         inclua seu currículo em nosso banco de dados, ficamos felizes com seu
