@@ -1,0 +1,78 @@
+
+.products {
+    background: var(--vermelhoescuro);
+    padding: 50px 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.534);
+    text-align: center;
+  }
+  
+  .products .content-products {
+    padding: 50px 0;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .products .content-products h2 {
+    font-size: 50px;
+    font-weight: 200;
+    color: var(--branco);
+  
+    margin-bottom: 30px;
+  }
+  .products .content-products p {
+    position: relative;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 30px;
+    color: var(--branco);
+    line-height: 1.4;
+  }
+  
+  /* =============================== Card catalogos =============================== */
+  
+  .cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 690px;
+    display: flex;
+    justify-content: center;
+  }
+  .cards .card img {
+    width: 70%;
+    border-radius: 10px;
+  }
+  .card a {
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid var(--branco);
+  
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s ease;
+  }
+  .card a:hover {
+    color: var(--vermelhoescuro);
+    background-color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 15px -7px var(--branco);
+  }
